@@ -1,0 +1,138 @@
+{
+  "users": [
+    {
+      "id": "demo-user-1",
+      "email": "demo@finzoflow.com",
+      "password": "$2a$10$./BTmNjBhVLEJwmv3cHniOBOBNwXqh.em7t1HUf6aUB0LR5ZYIrSW",
+      "name": "John Doe",
+      "businessName": "FinzoFlow Solutions",
+      "address": "123 Main St, City, State 12345",
+      "taxId": "TAX123456",
+      "preferredCurrency": "USD",
+      "createdAt": "2025-08-26T19:54:51.318Z",
+      "updatedAt": "2025-08-26T19:54:51.318Z"
+    },
+    {
+      "id": "86af0e73-71e7-4145-a4f8-d2801a0729a1",
+      "email": "test@example.com",
+      "password": "$2a$10$Az6lwsEoQfZhjNILxkfLYOD8/3S2KR7dkYiXHjgpVm8yWO4BkrIya",
+      "name": "Test User",
+      "preferredCurrency": "USD",
+      "createdAt": "2025-08-26T20:25:03.970Z",
+      "updatedAt": "2025-08-26T20:25:03.970Z"
+    },
+    {
+      "id": "1bb22d22-47cb-406f-839f-ce38384cd312",
+      "email": "jozneyprueba@gmail.com",
+      "password": "$2a$10$x3qkD0Eq985mp6OxeFFvKeMpiLADvgc8bQIm/8M8BN/ZSrKmvSe1C",
+      "name": "josney niño",
+      "businessName": "frelance",
+      "address": "calle cacun puerto 1",
+      "preferredCurrency": "USD",
+      "createdAt": "2025-08-26T21:49:07.717Z",
+      "updatedAt": "2025-08-26T21:49:07.717Z"
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-1",
+      "userId": "demo-user-1",
+      "name": "Acme Corp",
+      "email": "contact@acme.com",
+      "company": "Acme Corporation",
+      "address": "456 Business Ave, Business City",
+      "phone": "+1 234-567-8900",
+      "createdAt": "2025-08-26T19:54:51.319Z",
+      "updatedAt": "2025-08-26T19:54:51.319Z"
+    },
+    {
+      "id": "client-2",
+      "userId": "demo-user-1",
+      "name": "Tech Solutions Inc",
+      "email": "info@techsolutions.com",
+      "company": "Tech Solutions Inc",
+      "address": "789 Innovation Dr, Tech City",
+      "phone": "+1 234-567-8901",
+      "createdAt": "2025-08-26T19:54:51.319Z",
+      "updatedAt": "2025-08-26T19:54:51.319Z"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "invoice-1",
+      "userId": "demo-user-1",
+      "clientId": "client-1",
+      "invoiceNumber": "INV-2024-001",
+      "subtotal": 5000,
+      "taxRate": 0.21,
+      "taxAmount": 1050,
+      "total": 6050,
+      "status": "paid",
+      "issueDate": "2024-01-15",
+      "dueDate": "2024-02-15",
+      "createdAt": "2025-08-26T19:54:51.320Z",
+      "updatedAt": "2025-08-26T19:54:51.320Z"
+    },
+    {
+      "id": "invoice-2",
+      "userId": "demo-user-1",
+      "clientId": "client-2",
+      "invoiceNumber": "INV-2024-002",
+      "subtotal": 3000,
+      "taxRate": 0.21,
+      "taxAmount": 630,
+      "total": 3630,
+      "status": "sent",
+      "issueDate": "2024-01-20",
+      "dueDate": "2024-02-20",
+      "createdAt": "2025-08-26T19:54:51.320Z",
+      "updatedAt": "2025-08-26T19:54:51.320Z"
+    }
+  ],
+  "invoiceItems": [
+    {
+      "id": "item-1",
+      "invoiceId": "invoice-1",
+      "description": "Web Development Services",
+      "quantity": 1,
+      "unitPrice": 5000,
+      "total": 5000,
+      "createdAt": "2025-08-26T19:54:51.321Z"
+    },
+    {
+      "id": "item-2",
+      "invoiceId": "invoice-2",
+      "description": "Consulting Services",
+      "quantity": 20,
+      "unitPrice": 150,
+      "total": 3000,
+      "createdAt": "2025-08-26T19:54:51.321Z"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "expense-1",
+      "userId": "demo-user-1",
+      "description": "Adobe Creative Suite",
+      "amount": 59.99,
+      "category": "software",
+      "vendor": "Adobe",
+      "date": "2024-01-10",
+      "isDeductible": true,
+      "createdAt": "2025-08-26T19:54:51.321Z",
+      "updatedAt": "2025-08-26T19:54:51.321Z"
+    },
+    {
+      "id": "expense-2",
+      "userId": "demo-user-1",
+      "description": "Office Supplies",
+      "amount": 125.5,
+      "category": "office_supplies",
+      "vendor": "Office Depot",
+      "date": "2024-01-12",
+      "isDeductible": true,
+      "createdAt": "2025-08-26T19:54:51.321Z",
+      "updatedAt": "2025-08-26T19:54:51.321Z"
+    }
+  ]
+}
